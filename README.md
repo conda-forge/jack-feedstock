@@ -14,14 +14,16 @@ Summary: Audio connection kit.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jack-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jack-feedstock)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/jack-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/jack-feedstock)
+![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jack/badges/version.svg)](https://anaconda.org/conda-forge/jack)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jack/badges/downloads.svg)](https://anaconda.org/conda-forge/jack)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-jack-green.svg)](https://anaconda.org/conda-forge/jack) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jack.svg)](https://anaconda.org/conda-forge/jack) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jack.svg)](https://anaconda.org/conda-forge/jack) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jack.svg)](https://anaconda.org/conda-forge/jack) |
 
 Installing jack
 ===============
