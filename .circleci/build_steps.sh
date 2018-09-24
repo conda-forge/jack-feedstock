@@ -7,7 +7,6 @@
 
 set -xeuo pipefail
 export PYTHONUNBUFFERED=1
-
 export FEEDSTOCK_ROOT=/home/conda/feedstock_root
 export RECIPE_ROOT=/home/conda/recipe_root
 export CI_SUPPORT=/home/conda/feedstock_root/.ci_support
@@ -25,7 +24,6 @@ conda install --yes --quiet conda-forge::conda-forge-ci-setup=2 conda-build
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
-
 # A lock sometimes occurs with incomplete builds. The lock file is stored in build_artifacts.
 conda clean --lock
 
@@ -38,6 +36,5 @@ conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
     --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"  --quiet
 
 upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
-
 
 touch "/home/conda/feedstock_root/build_artifacts/conda-forge-build-done-${CONFIG}"
