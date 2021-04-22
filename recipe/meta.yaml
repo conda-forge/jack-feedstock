@@ -7,6 +7,11 @@ package:
 source:
   url: https://github.com/jackaudio/jack2/archive/v{{ version }}.tar.gz
   sha256: 5a1d64118034d58529d68a9af42710f9d4843536257c496118065ea3d3e4ae2c
+  patches:
+    # pick up the proper version of Python
+    - waf.patch
+    # https://git.kx.studio/jackaudio/jack2/commit/9fe56af980e4a7279cfe826a2b1f8bf1f799763a
+    - common-jackapi.cpp.patch
 
 build:
   number: 0
@@ -18,6 +23,8 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - python >=3.6
+    - pkg-config
   host:
     - libdb
     - alsa-lib >=1.0.18
@@ -36,8 +43,8 @@ test:
 
 about:
   home: http://jackaudio.org/
-  license: LGLP-2.0
-  license_file: COPYING.LGPL
+  license: LGLP-2.0-only
+  license_file: COPYING
   summary: 'Audio connection kit.'
 
 extra:
