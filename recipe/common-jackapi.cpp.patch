@@ -1,0 +1,20 @@
+--- common/JackAPI.cpp.orig	2021-04-21 22:53:57.007911487 -0500
++++ common/JackAPI.cpp	2021-04-21 22:53:05.236399254 -0500
+@@ -18,6 +18,8 @@
+ 
+ */
+ 
++#define __STDC_FORMAT_MACROS 1
++#include <inttypes.h>
+ #include "JackClient.h"
+ #include "JackError.h"
+ #include "JackGraphManager.h"
+@@ -27,8 +29,6 @@
+ #include "JackTime.h"
+ #include "JackPortType.h"
+ #include <math.h>
+-#define __STDC_FORMAT_MACROS 1
+-#include <inttypes.h>
+ 
+ using namespace Jack;
+ 
