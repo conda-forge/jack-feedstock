@@ -43,7 +43,7 @@ test:
 
 about:
   home: http://jackaudio.org/
-  license: LGLP-2.0-only
+  license: LGPL-2.0-only
   license_file: COPYING
   summary: 'Audio connection kit.'
 
