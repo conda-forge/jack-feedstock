@@ -10,8 +10,6 @@ source:
   patches:
     # pick up the proper version of Python
     - waf.patch
-    # https://git.kx.studio/jackaudio/jack2/commit/9fe56af980e4a7279cfe826a2b1f8bf1f799763a
-    - common-jackapi.cpp.patch
 
 build:
   number: 0
