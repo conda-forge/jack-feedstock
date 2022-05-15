@@ -14,7 +14,7 @@ source:
     - common-jackapi.cpp.patch
 
 build:
-  number: 1001
+  number: 1002
   skip: True  # [win or osx]
   run_exports:
     - {{ pin_subpackage('jack', max_pin='x.x') }}
@@ -38,8 +38,6 @@ requirements:
 
 test:
   commands:
-    - conda inspect linkages -p $PREFIX jack  # [not win]
-    - conda inspect objects -p $PREFIX jack  # [osx]
 
 about:
   home: http://jackaudio.org/
