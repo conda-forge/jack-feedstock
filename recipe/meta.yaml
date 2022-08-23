@@ -14,7 +14,7 @@ source:
     - common-jackapi.cpp.patch
 
 build:
-  number: 1002
+  number: 1003
   skip: True  # [win or osx]
   run_exports:
     - {{ pin_subpackage('jack', max_pin='x.x') }}
