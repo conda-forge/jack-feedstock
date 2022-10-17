@@ -1,4 +1,4 @@
-{% set version = "1.9.18" %}
+{% set version = "1.9.21" %}
 
 package:
   name: jack
@@ -6,16 +6,14 @@ package:
 
 source:
   url: https://github.com/jackaudio/jack2/archive/v{{ version }}.tar.gz
-  sha256: 5a1d64118034d58529d68a9af42710f9d4843536257c496118065ea3d3e4ae2c
+  sha256: 8b044a40ba5393b47605a920ba30744fdf8bf77d210eca90d39c8637fe6bc65d
   patches:
     # pick up the proper version of Python
     - waf.patch
-    # https://git.kx.studio/jackaudio/jack2/commit/9fe56af980e4a7279cfe826a2b1f8bf1f799763a
-    - common-jackapi.cpp.patch
 
 build:
-  number: 1005
-  skip: True  # [win or osx]
+  number: 0
+  skip: true  # [win or osx]
   run_exports:
     - {{ pin_subpackage('jack', max_pin='x.x') }}
 
@@ -44,7 +42,7 @@ about:
   home: http://jackaudio.org/
   license: LGPL-2.0-only
   license_file: COPYING
-  summary: 'Audio connection kit.'
+  summary: Audio connection kit.
 
 extra:
   recipe-maintainers:
