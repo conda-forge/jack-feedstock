@@ -14,7 +14,7 @@ source:
     - common-jackapi.cpp.patch
 
 build:
-  number: 1003
+  number: 1004
   skip: True  # [win or osx]
   run_exports:
     - {{ pin_subpackage('jack', max_pin='x.x') }}
@@ -27,12 +27,13 @@ requirements:
     - pkg-config
   host:
     - libdb
+    - alsa-lib
     - alsa-lib >=1.0.18
     - libsndfile
     - readline
     - libopus
     - eigen >=3.1.2
-    - portaudio
+    - portaudio  # [win]
   run:
     - libdb
 
@@ -49,3 +50,4 @@ extra:
   recipe-maintainers:
     - ocefpaf
     - scopatz
+    - ryanvolz

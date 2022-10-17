@@ -1,5 +1,7 @@
 BUILD:
 - aarch64-conda_cos7-linux-gnu
+alsa_lib:
+- 1.2.7
 c_compiler:
 - gcc
 c_compiler_version:
@@ -18,9 +20,6 @@ cxx_compiler_version:
 - '10'
 docker_image:
 - quay.io/condaforge/linux-anvil-aarch64
-pin_run_as_build:
-  readline:
-    max_pin: x
 readline:
 - '8'
 target_platform:
