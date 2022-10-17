@@ -33,7 +33,7 @@ requirements:
     - readline
     - libopus
     - eigen >=3.1.2
-    - portaudio
+    - portaudio  # [win]
   run:
     - libdb
 
