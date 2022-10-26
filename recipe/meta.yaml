@@ -12,7 +12,7 @@ source:
     - waf.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or osx]
   run_exports:
     - {{ pin_subpackage('jack', max_pin='x.x') }}
@@ -21,7 +21,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - python >=3.6
+    - python >=3.6,<3.11
     - pkg-config
   host:
     - libdb
