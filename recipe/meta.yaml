@@ -21,7 +21,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - python >=3.6
+    - python >=3.6,<3.11
     - pkg-config
   host:
     - libdb
