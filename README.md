@@ -1,11 +1,11 @@
-About jack
-==========
+About jack-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jack-feedstock/blob/main/LICENSE.txt)
 
 Home: http://jackaudio.org/
 
 Package license: LGPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jack-feedstock/blob/main/LICENSE.txt)
 
 Summary: Audio connection kit.
 
