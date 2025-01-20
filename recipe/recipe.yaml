@@ -1,9 +1,8 @@
 context:
-  name: jack
   version: "1.9.22"
 
 package:
-  name: ${{ name|lower }}
+  name: jack
   version: ${{ version }}
 
 source:
@@ -19,7 +18,7 @@ requirements:
   build:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
-    - python
+    - python 3.12.*
     - pkg-config
   host:
     - libdb
@@ -47,3 +46,4 @@ extra:
     - ocefpaf
     - scopatz
     - ryanvolz
+    - raybellwaves
