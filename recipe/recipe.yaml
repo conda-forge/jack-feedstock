@@ -17,6 +17,7 @@ requirements:
     - ${{ pin_subpackage("jack", upper_bound="x.x") }}
   build:
     - ${{ compiler('c') }}
+    - ${{ compiler('cxx') }}
     - ${{ stdlib('c') }}
     - python 3.12.*
     - pkg-config
