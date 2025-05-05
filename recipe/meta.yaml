@@ -12,7 +12,7 @@ source:
     - waf.patch
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win or osx]
   run_exports:
     - {{ pin_subpackage('jack', max_pin='x.x') }}
@@ -25,14 +25,11 @@ requirements:
     - python >=3.6,<3.11
     - pkg-config
   host:
-    - libdb
     - alsa-lib
     - alsa-lib >=1.0.18
     - libopus
     - eigen >=3.1.2
     - portaudio  # [win]
-  run:
-    - libdb
 
 test:
   commands:
